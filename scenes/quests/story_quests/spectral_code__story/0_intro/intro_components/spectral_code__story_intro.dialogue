@@ -1,0 +1,11 @@
+~ start
+do animation_player.play(&"walk_on")
+do animation_player.animation_finished
+Yuke: ¿Qué… pasó? Este lugar… no lo reconozco.
+Yuke: El Código Espectral está roto. Lo siento en mi alma.
+Yuke: Debo encontrar los fragmentos antes de que todo se desvanezca.
+Lama-K: Solo tú puedes reunir los fragmentos, Yuke. El código aún vibra en ti.
+Lama-K: Tal vez los hallarás en la costa, la sierra y la selva peruana.
+do animation_player.play(&"walk_off")
+Lama-K: Tu viaje comienza ahora, Yuke.
+=> END
