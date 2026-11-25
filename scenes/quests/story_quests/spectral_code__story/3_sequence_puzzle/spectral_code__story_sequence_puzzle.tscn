@@ -153,7 +153,7 @@ hint_sign = NodePath("../../Signs/HintSign2")
 [node name="CollectibleItem" parent="OnTheGround" instance=ExtResource("17_ki5mj")]
 position = Vector2(861, 282)
 revealed = false
-next_scene = "res://scenes/quests/story_quests/spectral_code__story/spectral_code_complete.tscn"
+next_scene = "res://scenes/quests/story_quests/spectral_code__story/4_outro/spectral_code__story_outro.tscn"
 item = SubResource("Resource_5l70h")
 collected_dialogue = ExtResource("19_7xr35")
 dialogue_title = &"well_done"
