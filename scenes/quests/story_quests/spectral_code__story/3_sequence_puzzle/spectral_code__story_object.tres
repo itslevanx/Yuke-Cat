@@ -1,0 +1,44 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://dpstqxia5c6k8"]
+
+[ext_resource type="Texture2D" uid="uid://dugso2tmmdx2n" path="res://scenes/quests/story_quests/spectral_code__story/3_sequence_puzzle/Terreno selva/hojat2.png" id="1_1kfr6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0rwt7"]
+atlas = ExtResource("1_1kfr6")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7vqi8"]
+atlas = ExtResource("1_1kfr6")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_snc4a"]
+atlas = ExtResource("1_1kfr6")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5d3b"]
+atlas = ExtResource("1_1kfr6")
+region = Rect2(192, 0, 96, 96)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0rwt7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7vqi8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_snc4a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5d3b")
+}],
+"loop": true,
+"name": &"struck",
+"speed": 10.0
+}]

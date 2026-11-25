@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+Voz espectral: Yuke entra en la selva, donde las hojas de ayahuasca susurran en secuencia.  
+Voz espectral: Escucha su tonada. Cada nota revela el orden de los pasos.  
+Voz espectral: Solo quien siga el ritmo podrá despertar el fragmento oculto.  
+lama-k: Observa los colores: amarillo, verde, azul.  
+lama-k: Tócalos en ese orden. La selva te guía.  
+=> END
+
+~ well_done
+Voz espectral: El canto ha sido completado.  
+Voz espectral: El fragmento se revela entre las raíces.  
+lama-k: ¡Bien hecho, Yuke! 
+=> END
