@@ -27,6 +27,7 @@ PauseOverlay="*res://scenes/globals/pause/pause_overlay.tscn"
 MusicPlayer="*res://scenes/globals/music_player/music_player.tscn"
 CameraShake="*res://scenes/globals/camera_shaker/camera_shake.tscn"
 InputHelper="*res://addons/input_helper/input_helper.gd"
+TouchControls="*res://scenes/globals/touch_controls/touch_controls.tscn"
 
 [debug]
 
@@ -193,6 +194,10 @@ throw={
 , Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(92, 25),"global_position":Vector2(92, 54),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
+
+[input_devices]
+
+pointing/emulate_mouse_from_touch=true
 
 [layer_names]
 

@@ -10,7 +10,11 @@ Yuke debe recuperar los fragmentos del Código Espectral en la costa, la sierra 
 
 El repositorio incluye las cinco escenas de la historia y todos los recursos necesarios para ejecutarlas. Los recursos se descargan con un clon normal de Git.
 
-## Controles
+## Jugar en el celular
+
+Abre el [juego en Vercel](https://yuke-cat.vercel.app/) desde el navegador. Mueve a Yuke con la palanca de la izquierda. Mantén **Correr** mientras te mueves para ir más rápido y usa **Acción** para interactuar, lanzar o activar los objetos del nivel. Puedes avanzar el diálogo con **Siguiente** y pausar con **Ⅱ**. El juego requiere que coloques el celular en horizontal. Si lo giras a vertical, la partida se pausa hasta que vuelvas a horizontal.
+
+## Controles con teclado
 
 | Acción | Teclas |
 | --- | --- |

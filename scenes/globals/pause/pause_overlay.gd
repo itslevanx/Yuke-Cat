@@ -25,6 +25,9 @@ func toggle_pause() -> void:
 	get_tree().paused = new_state
 
 	if new_state:
+		if bool(TouchControls.get_node("Controls").get("enabled")):
+			for button: Button in [resume_button, %OptionsButton, %RestartButton]:
+				button.custom_minimum_size = Vector2(232.0, 102.0)
 		pause_menu.show()
 		resume_button.grab_focus()
 

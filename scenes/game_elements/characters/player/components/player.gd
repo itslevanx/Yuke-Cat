@@ -157,7 +157,7 @@ func _ready() -> void:
 	_set_sprite_frames(sprite_frames)
 
 
-func _unhandled_input(_event: InputEvent) -> void:
+func _update_movement_input() -> void:
 	var axis: Vector2 = Input.get_vector(&"move_left", &"move_right", &"move_up", &"move_down")
 
 	var speed: float
@@ -188,10 +188,15 @@ func _process(delta: float) -> void:
 	if player_hook.pulling:
 		return
 
-	if player_interaction.is_interacting or mode == Mode.DEFEATED:
+	if (
+		player_interaction.is_interacting or mode == Mode.DEFEATED
+		or get_tree().has_group(&"dialogue_balloon")
+	):
+		input_vector = Vector2.ZERO
 		velocity = Vector2.ZERO
 		return
 
+	_update_movement_input()
 	var step := (
 		stopping_step if velocity.length_squared() > input_vector.length_squared() else moving_step
 	)

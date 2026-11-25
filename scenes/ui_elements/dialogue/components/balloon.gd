@@ -72,6 +72,11 @@ var _player_name: String = ""
 
 
 func _ready() -> void:
+	add_to_group(&"dialogue_balloon")
+	var touch_controls := TouchControls.get_node("Controls")
+	if bool(touch_controls.get("enabled")):
+		get_viewport().size_changed.connect(_layout_touch_balloon)
+		_layout_touch_balloon()
 	balloon.hide()
 	Engine.get_singleton("DialogueManager").mutated.connect(_on_mutated)
 
@@ -82,6 +87,13 @@ func _ready() -> void:
 	mutation_cooldown.timeout.connect(_on_mutation_cooldown_timeout)
 	next_button.pressed.connect(func() -> void: next(dialogue_line.next_id))
 	add_child(mutation_cooldown)
+
+
+func _layout_touch_balloon() -> void:
+	balloon.scale = Vector2.ONE * 1.12
+	balloon.position = Vector2(22.0, 34.0)
+	next_button.custom_minimum_size.y = 94.0
+	next_button.text = "Siguiente"
 
 
 func _unhandled_input(_event: InputEvent) -> void:
