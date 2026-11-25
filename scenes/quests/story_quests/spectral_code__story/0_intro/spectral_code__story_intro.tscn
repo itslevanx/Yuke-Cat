@@ -190,5 +190,5 @@ position = Vector2(315, 260)
 script = ExtResource("4_8rodm")
 dialogue = ExtResource("5_j4qss")
 animation_player = NodePath("../OnTheGround/AnimationPlayer")
-next_scene = "res://scenes/quests/story_quests/spectral_code__story/spectral_code_complete.tscn"
+next_scene = "res://scenes/quests/story_quests/spectral_code__story/1_stealth/spectral_code__story_stealth.tscn"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"

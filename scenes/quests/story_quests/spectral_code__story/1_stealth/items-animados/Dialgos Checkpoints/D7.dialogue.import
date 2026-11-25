@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://culvj0nqbu5dg"
+path="res://.godot/imported/D7.dialogue-3d2535c6cbc0585785c69e08a959951b.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/spectral_code__story/1_stealth/items-animados/Dialgos Checkpoints/D7.dialogue"
+dest_files=["res://.godot/imported/D7.dialogue-3d2535c6cbc0585785c69e08a959951b.tres"]
+
+[params]
+
+defaults=true

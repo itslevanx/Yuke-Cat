@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://bkm7rpeuol8gf"]
+
+[ext_resource type="Script" uid="uid://bk5ri1yoakaqp" path="res://scenes/game_elements/props/checkpoint/components/checkpoint.gd" id="1_25oos"]
+[ext_resource type="Script" uid="uid://0enyu5v4ra34" path="res://scenes/game_elements/props/spawn_point/components/spawn_point.gd" id="2_gqq8i"]
+[ext_resource type="SpriteFrames" uid="uid://bejinndhaoxsg" path="res://scenes/quests/story_quests/spectral_code__story/1_stealth/items/lama-k.tres" id="3_25oos"]
+[ext_resource type="PackedScene" uid="uid://dutgnbiy7xalb" path="res://scenes/game_elements/props/interact_area/interact_area.tscn" id="4_fgq3q"]
+[ext_resource type="Script" uid="uid://edcifob4jc4s" path="res://scenes/game_logic/talk_behavior.gd" id="5_8ltpq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3xcwf"]
+radius = 48.0
+
+[node name="Checkpoint" type="Area2D"]
+collision_layer = 0
+script = ExtResource("1_25oos")
+sprite_frames = ExtResource("3_25oos")
+
+[node name="SpawnPoint" type="Marker2D" parent="." groups=["spawn_point"]]
+unique_name_in_owner = true
+script = ExtResource("2_gqq8i")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-2.5312529, -51.000004)
+scale = Vector2(1.5478514, 1.5775719)
+sprite_frames = ExtResource("3_25oos")
+animation = &"idle"
+frame_progress = 0.3824628
+
+[node name="InteractArea" parent="." instance=ExtResource("4_fgq3q")]
+unique_name_in_owner = true
+collision_layer = 0
+interact_label_position = Vector2(0, -128)
+disabled = true
+action = "Admire"
+
+[node name="CollisionShape" type="CollisionShape2D" parent="InteractArea"]
+position = Vector2(1, -4)
+shape = SubResource("CircleShape2D_3xcwf")
+debug_color = Color(0.600391, 0.54335, 0, 0.42)
+
+[node name="TalkBehavior" type="Node" parent="." node_paths=PackedStringArray("interact_area")]
+unique_name_in_owner = true
+script = ExtResource("5_8ltpq")
+interact_area = NodePath("../InteractArea")
+metadata/_custom_type_script = "uid://edcifob4jc4s"
